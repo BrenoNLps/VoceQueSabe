@@ -1,6 +1,8 @@
 *{
     list-style-type: none;
     font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 body{
@@ -14,9 +16,15 @@ body{
     background-color:rgb(142, 175, 175)
 }
 
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .roleta{
-    padding: 0;
-    margin: 0;
+
     width: 370px;
     height: 370px;
     border-radius: 50%;
@@ -27,16 +35,9 @@ body{
     justify-content: center;
     background-color: #c7c692;
     border: 10px solid #dbc086;
-    box-shadow: 40px 40px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 20px 40px 6px rgba(0, 0, 0, 0.1);
 }
 
-.container{
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .spin{
     position: absolute;
@@ -44,7 +45,7 @@ body{
     background-color: #ced6ce;
     border-color: rgb(148, 137, 137);
     border-radius: 100%;
-    box-shadow: 0 4px #999;
+    box-shadow: 2px 4px 1px #999;
 }
 .botao{
     position: absolute;
@@ -56,6 +57,6 @@ body{
     border: 2px solid;
     border-radius: 100%;
     cursor: pointer;
-    box-shadow: 0 5px #949494;
+    box-shadow: 2px 4px 1px #949494;
     bottom: -60px;
 }
