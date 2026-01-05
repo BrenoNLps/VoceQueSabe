@@ -38,3 +38,24 @@ body{
     justify-content: center;
 }
 
+.spin{
+    position: absolute;
+    padding: 20px 20px;
+    background-color: #ced6ce;
+    border-color: rgb(148, 137, 137);
+    border-radius: 100%;
+    box-shadow: 0 4px #999;
+}
+.botao{
+    position: absolute;
+    padding: 30px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border-color: rgb(148, 137, 137);
+    border: 2px solid;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0 5px #949494;
+    bottom: -60px;
+}
