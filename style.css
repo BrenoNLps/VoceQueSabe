@@ -108,6 +108,16 @@ body{
 }
 
 /*---------------------------------------------------------*/
+.subcontainer_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    height: 70%;
+}
+
+
 table {
     border: 5px solid hsl(0, 0%, 100%);
     border-radius: 20px 20px 0px 0px;
