@@ -27,21 +27,21 @@
         <button class="botao" onclick="girarRoleta()">Girar</button>
     </div>
     <div class="container_2">
-        <table>
-            <thead>
-                <tr>
-                    <th>Comidas</th>
-                </tr>
-                <tr>
-                    <th>Excluir</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-        <form class="formulario" action="index.html" method="get">
-            <button class="botao-adicionar" type="submit">Adicionar Opção</button>
-        </form>
+        <div class="subcontainer_2">
+            <table>
+                <thead>
+                    <tr class="teste">
+                        <td>Comidas</td>
+                        <td>Excluir</td>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+            <form class="formulario" action="index.html" method="get">
+                <button class="adicionar" type="submit">Adicionar Opção</button>
+            </form>
+        </div>
     </div>
 
     <script src="script.js"></script>
