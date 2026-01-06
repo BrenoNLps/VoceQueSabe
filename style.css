@@ -17,6 +17,14 @@ body{
     background-color:rgb(142, 175, 175)
 }
 
+.titulo{
+    position: absolute;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 2px 1px 6px;
+}
 .container{
     position: relative;
     display: flex;
