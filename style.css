@@ -106,3 +106,37 @@ body{
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.466);
     bottom: 1.5%;
 }
+
+/*---------------------------------------------------------*/
+table {
+    border: 5px solid hsl(0, 0%, 100%);
+    border-radius: 20px 20px 0px 0px;
+    border-spacing: 0; 
+    overflow: hidden; 
+
+    width: 60%;
+    height: 70%;
+    color: white;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.466);
+}
+
+thead{
+    background-color: #5b74c9;
+
+    
+}
+tbody{
+    background-color: #4d7249;
+    
+}
+tr{
+    
+    
+}
+
+th{
+    padding: 20px 15px;
+    border-bottom: 5px solid hsl(0, 0%, 100%)   ;
+    border: 1px solid hsl(0, 0%, 100%)   ;
+
+}
