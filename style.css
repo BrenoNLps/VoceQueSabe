@@ -22,7 +22,7 @@ body{
     color: white;
     text-shadow: rgb(0, 0, 0) 2px 1px 6px;
 }
-.container{
+.container_1{
     position: relative;
     display: flex;
     align-items: center;
@@ -32,11 +32,20 @@ body{
     overflow: hidden;
 }
 
-.formulario{
+.container_2{
     border-left: 5px solid hsl(0, 0%, 100%);
     width: 50%;
     background-color: #4CAF50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
+
+
+
+/*---------------------------------------------------------*/
 .roleta{
     width: 400px;
     height: 400px;
