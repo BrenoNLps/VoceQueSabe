@@ -4,6 +4,8 @@
     padding: 0;
     margin: 0;
     font-weight: bold;
+     box-sizing: border-box;
+
 }
 
 body{
@@ -128,23 +130,48 @@ table {
     box-shadow: 20px 67px 20px rgba(0, 0, 0, 0.466);
 }
 
-thead{
-    background-color: #5b74c9;
+thead{background-color: #0a0708; }
 
-    
-}
-tbody{
-    background-color: #4d7249;
-    
-}
-tr{
-    
-    
-}
-
-th{
-    padding: 20px 15px;
-    border-bottom: 5px solid hsl(0, 0%, 100%)   ;
-    border: 1px solid hsl(0, 0%, 100%)   ;
+tbody{background-color: #a9b0b1; }
+td{
+    padding:1%;
+    width: 50%;
+    text-align: center;
+    border:1.55px solid #0a0708   ;
 
 }
+
+.formulario{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #0a0708;
+    border-width: 0px 5px 5px 5px;
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    height: 10%;
+    
+}
+.adicionar{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+    background-color: #1d1c1c;
+    border-radius: 0px 0px 10px 10px;
+
+    border: none;
+}
+
+.btnExcluir{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    color: #ffffff;
+    border: 2px solid #0a0708;
+    cursor: pointer;
+    background-color: #ce5b5b;
+}
+
