@@ -1,9 +1,9 @@
 *{
     list-style-type: none;
-    font-family: Arial, sans-serif;
+    font-family:monospace;
     padding: 0;
     margin: 0;
-    font-weight: bold;
+    font-weight:bolder;
      box-sizing: border-box;
 
 }
@@ -70,7 +70,7 @@ body{
     height: 470px;
     border-radius: 50%;
     background-color: #c7c692;
-    border: 5px solid hsl(0, 0%, 100%);
+    border: 5px solid hsl(0, 0%, 0%);
     box-shadow: 20px 40px 15px rgba(0, 0, 0, 0.466);
     position: relative;
     overflow: hidden;
@@ -87,32 +87,31 @@ body{
     width: 50%;
     height: 58%;
     transform-origin: 0% 0%;
-    border: #e0e0e0 2px solid;
+    border: #000000 3px solid;
 
 }
 
 .texto-item{
 
-    color: rgb(211, 208, 208);
+    color: rgb(255, 250, 250);
     text-shadow: rgb(0, 0, 0) 2px 1px 6px;
     position: relative;
     width: 100%;
-    font-size: 20px;
+    font-size: 21px;
     white-space: nowrap;
     margin-top: -90px;
     
 }
 
-
 .spin{
     position: absolute;
     padding: 20px 20px;
-    background-color: #ced6ce;
-    border-color: rgb(148, 137, 137);
+    background-color: #b9bdb9;
     border-radius: 100%;
-    box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.466);
+    border: 5px solid #e4dfe1   ;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.466);
 }
-.botao{
+.botao-girar{
     position: absolute;
     padding: 30px 20px;
     font-size: 16px;
@@ -122,8 +121,8 @@ body{
     border: 4px solid;
     border-radius: 100%;
     cursor:pointer;
-    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.466);
-    bottom: 1.5%;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.466);
+    bottom: -10%;
 }
 
 /*---------------------------------------------------------*/
