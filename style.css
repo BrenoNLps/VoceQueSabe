@@ -103,14 +103,27 @@ body{
     
 }
 
-.arrow{
-  width: 50px;
-  height: 50px;
-  background-color: #ce5b5b;
-  position: absolute;
-  top: 0;
-
+.arrow-border {
+    width: 60px;   
+    height: 60px;
+    position: absolute;
+    top: -8px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background: rgb(0, 0, 0); 
 }
+
+.arrow{
+    width: 43px;   
+    height: 43px;
+  position: absolute;
+    top: 5px;
+    left: 8.5px;  
+    background: #65a4d8;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
+}
+/*  #4CAF50;   */
+
 .center-dot{
     position: absolute;
     padding: 20px 20px;
