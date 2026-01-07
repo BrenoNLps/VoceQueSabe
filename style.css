@@ -18,11 +18,13 @@ body{
 
 .titulo{
     position: absolute;
+    padding: 10px;
     text-align: center;
+    width: 100%;
     margin-bottom: 20px;
     font-size: 30px;
-    color: white;
-    text-shadow: rgb(0, 0, 0) 2px 1px 6px;
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(255, 255, 255) 2px 2px 1px;
 }
 .container_1{
     position: relative;
@@ -31,7 +33,6 @@ body{
     justify-content: center;
     background-color: #383a3d;
     width: 50%;
-    overflow: hidden;
 }
 
 .subcontainer_1{
@@ -87,6 +88,7 @@ body{
     height: 58%;
     transform-origin: 0% 0%;
     border: #000000 3px solid;
+    overflow: hidden;
 
 }
 
@@ -96,8 +98,8 @@ body{
     text-shadow: rgb(0, 0, 0) 2px 1px 6px;
     position: relative;
     width: 100%;
+    background-color: #076dc0;
     font-size: 21px;
-    white-space: nowrap;
     margin-top: -90px;
     
 }
