@@ -174,7 +174,6 @@ td{
 .formulario{
 
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 5px solid #0a0708;
@@ -184,18 +183,6 @@ td{
     height: 10%;
     
 }
-.adicionar{
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    color: white;
-    background-color: #1d1c1c;
-    border-radius: 0px 0px 10px 10px;
-    
-    font-size: 17px;
-    border: none;
-}
-
 .btnExcluir{
     width: 100%;
     height: 100%;
@@ -207,3 +194,24 @@ td{
     background-color: #ce5b5b;
 }
 
+#txtComida{
+    background-color: #f8f8f8;
+    height: 100%;
+    width: 50%;
+    border-radius: 0px 0 0 15px;
+
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 15PX;
+    border-width: 0 0 2px 0;
+}
+.adicionar{
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+    background-color: #96c060;
+    border-radius: 0px 0px 10px 0px;
+    font-size: 17px;
+    border-width: 0 0 0 2px;
+}
