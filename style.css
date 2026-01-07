@@ -63,7 +63,7 @@ body{
 }
 
 
-/*---------------------------------------------------------*/
+/*-----------------------Roleta----------------------------------*/
 .roleta{
     width: 470px;
     height: 470px;
@@ -142,9 +142,11 @@ body{
     cursor:pointer;
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.466);
     bottom: -10%;
+}.botao-girar:hover{
+    background-color: #076dc0;
 }
 
-/*---------------------------------------------------------*/
+/*-------------------------Formulario--------------------------------*/
 
 
 table {
@@ -192,6 +194,8 @@ td{
     cursor: pointer;
     font-size: 17px;
     background-color: #ce5b5b;
+}.btnExcluir:hover{
+    background-color: #c51b1b;
 }
 
 #txtComida{
@@ -214,4 +218,7 @@ td{
     border-radius: 0px 0px 10px 0px;
     font-size: 17px;
     border-width: 0 0 0 2px;
+}.adicionar:hover{
+        background-color: #77b126;
 }
+
