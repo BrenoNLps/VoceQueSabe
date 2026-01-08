@@ -62,6 +62,13 @@ function posicionaFatias(){
 
 itens.forEach((item, i) => {
   const texto = item.querySelector(".texto-item");
+  
+
+  //reseta estilo para nao manter estilo do tamanho anterior
+  item.style = "";
+  texto.style = "";
+
+
   item.style.backgroundColor = `hsl(${i * angulo}, 60%, 70%)`;
   item.style.transform = `rotate(${i * angulo}deg) skewY(${90 - angulo}deg)`;
   if (total === 2) {
