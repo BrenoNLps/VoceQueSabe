@@ -1,7 +1,8 @@
 const  roleta = document.getElementById("roleta");
 const  itens = document.querySelectorAll(".item");
 const  tableBody = document.getElementById("tableBody");
-
+const total = itens.length;
+const angulo = 360 / total;
 
 //---------------------------Popula-tabela---------------------------//
 itens.forEach((item, i)=>{
@@ -27,9 +28,6 @@ itens.forEach((item, i)=>{
 
 //-------------------------Posiciona-Comidas-------------------------//
 itens.forEach((item, i) => {
-  console.log(i);
-  const total = itens.length;
-  const angulo = 360 / total;
   const texto = item.querySelector(".texto-item");
   item.style.backgroundColor = `hsl(${i * angulo}, 60%, 70%)`;
   item.style.transform = `rotate(${i * angulo}deg) skewY(${90 - angulo}deg)`;
@@ -76,3 +74,18 @@ itens.forEach((item, i) => {
   }
 })
 
+
+//----------------------------Roda-Roleta----------------------------//
+function girarRoleta() {
+  const ajustaAnguloParaCentroDaFatia = 23;
+  const rotacoes = 5;
+  const indiceComidaSorteada = Math.floor(Math.random() * total);
+  const anguloFatia = indiceComidaSorteada* angulo; 
+  const rotacao = (360 * rotacoes) + (180 - anguloFatia) + ajustaAnguloParaCentroDaFatia;  
+
+  roleta.style.transition = "transform 4s ease-out";
+  roleta.style.transform = `rotate(${rotacao}deg)`;
+  setTimeout(() => {
+    document.getElementById("result").textContent ="Você sabe: " + itens[indiceComidaSorteada].innerText;
+  }, 4000);
+}
