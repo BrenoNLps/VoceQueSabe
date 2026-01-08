@@ -1,8 +1,16 @@
 const  roleta = document.getElementById("roleta");
-const  itens = document.querySelectorAll(".item");
 const  formulario = document.getElementById("tableBody");
+
+
+
+function getComidaDados() {
+  const itens = document.querySelectorAll(".item"); 
 const total = itens.length;
 const angulo = 360 / total;
+  return { itens, total, angulo };
+}
+
+
 
 //---------------------------Popula-tabela---------------------------//
 function popularTabela(){
