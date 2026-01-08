@@ -5,8 +5,8 @@ const  formulario = document.getElementById("tableBody");
 
 function getComidaDados() {
   const itens = document.querySelectorAll(".item"); 
-const total = itens.length;
-const angulo = 360 / total;
+  const total = itens.length;
+  const angulo = 360 / total;
   return { itens, total, angulo };
 }
 
@@ -29,8 +29,8 @@ function criarLinhaTabela(item, texto) {
     if (total === 2) {
       alert("Número mínimo atingido");
     } else {
-    tr.remove();
-    item.remove();
+      tr.remove();
+      item.remove();
       posicionaFatias();
     }
   };
@@ -60,7 +60,7 @@ popularTabela();
 function posicionaFatias(){
   const {itens,total,angulo} = getComidaDados();
 
-itens.forEach((item, i) => {
+  itens.forEach((item, i) => {
   const texto = item.querySelector(".texto-item");
   
 
@@ -132,4 +132,37 @@ function girarRoleta() {
   setTimeout(() => {
     document.getElementById("result").textContent ="Você sabe: " + itens[indiceComidaSorteada].innerText;
   }, 4000);
+}
+
+//-------------------------Adicionar-Comida--------------------------//
+function adicionarComida(event) {
+  event.preventDefault();
+  const {total} = getComidaDados();  
+  if( total===8){
+    alert("Número máximo atingio!")
+  }else{
+      const input = document.getElementById("txtComida");
+    const valor = input.value.trim();
+
+    
+    if (valor === "") {
+      alert("Digite uma comida!");
+      return;
+    }
+
+    // cria novo <li class="item">
+    const novoItem = document.createElement("li");
+    novoItem.classList.add("item");
+
+    const textoItem = document.createElement("span");
+    textoItem.classList.add("texto-item");
+    textoItem.textContent = valor;
+    novoItem.appendChild(textoItem);
+    roleta.appendChild(novoItem);
+
+
+    criarLinhaTabela(novoItem, valor);
+    posicionaFatias();
+    input.value = "";
+  }
 }
