@@ -1,10 +1,11 @@
 const  roleta = document.getElementById("roleta");
 const  itens = document.querySelectorAll(".item");
-const  tableBody = document.getElementById("tableBody");
+const  formulario = document.getElementById("tableBody");
 const total = itens.length;
 const angulo = 360 / total;
 
 //---------------------------Popula-tabela---------------------------//
+function popularTabela(){
 itens.forEach((item, i)=>{
   const tr = document.createElement("tr");
 
@@ -16,17 +17,30 @@ itens.forEach((item, i)=>{
   const btnExcluir = document.createElement("button");
   btnExcluir.textContent = "Excluir";
   btnExcluir.classList.add("btnExcluir");
+
+  btnExcluir.onclick = function() {
+    tr.remove();
+    item.remove();
+    posicionarComidas();
+  };
+
   tdbutton.appendChild(btnExcluir);
   tdbutton.classList.add("tdExcluir");
 
+
+
   tr.appendChild(tdnome);
   tr.appendChild(tdbutton);
-  tableBody.appendChild(tr);
+  formulario.appendChild(tr);
 })
+
+}
+
 
 
 
 //-------------------------Posiciona-Comidas-------------------------//
+function posicionarComidas(){
 itens.forEach((item, i) => {
   const texto = item.querySelector(".texto-item");
   item.style.backgroundColor = `hsl(${i * angulo}, 60%, 70%)`;
