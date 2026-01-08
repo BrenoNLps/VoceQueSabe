@@ -12,38 +12,47 @@ const angulo = 360 / total;
 
 
 
-//---------------------------Popula-tabela---------------------------//
-function popularTabela(){
-itens.forEach((item, i)=>{
+function criarLinhaTabela(item, texto) {
   const tr = document.createElement("tr");
 
-  const tdnome= document.createElement("td");
-  tdnome.textContent = item.querySelector(".texto-item").textContent;
+  const tdnome = document.createElement("td");
+  tdnome.textContent = texto;
+  tr.appendChild(tdnome);
 
-
-  const tdbutton= document.createElement("td");
+  const tdbutton = document.createElement("td");
   const btnExcluir = document.createElement("button");
   btnExcluir.textContent = "Excluir";
   btnExcluir.classList.add("btnExcluir");
 
-  btnExcluir.onclick = function() {
+  btnExcluir.onclick = function () {
+    const { total } = getComidaDados();
+    if (total === 2) {
+      alert("Número mínimo atingido");
+    } else {
     tr.remove();
     item.remove();
-    posicionarComidas();
+      posicionaFatias();
+    }
   };
 
   tdbutton.appendChild(btnExcluir);
   tdbutton.classList.add("tdExcluir");
-
-
-
-  tr.appendChild(tdnome);
   tr.appendChild(tdbutton);
-  formulario.appendChild(tr);
-})
 
+  formulario.appendChild(tr);
 }
 
+//---------------------------Popula-tabela---------------------------//
+function popularTabela(){
+  const {itens} = getComidaDados();
+  
+  itens.forEach((item)=>{
+    const texto = item.querySelector(".texto-item").textContent;
+    criarLinhaTabela(item, texto);
+
+  })
+}
+popularTabela();
 
 
 
