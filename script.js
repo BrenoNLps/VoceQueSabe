@@ -57,7 +57,9 @@ popularTabela();
 
 
 //-------------------------Posiciona-Comidas-------------------------//
-function posicionarComidas(){
+function posicionaFatias(){
+  const {itens,total,angulo} = getComidaDados();
+
 itens.forEach((item, i) => {
   const texto = item.querySelector(".texto-item");
   item.style.backgroundColor = `hsl(${i * angulo}, 60%, 70%)`;
@@ -104,10 +106,14 @@ itens.forEach((item, i) => {
     texto.style.transform = `rotate(57deg)  translateY(-10%) skewX(22deg)`;
   }
 })
+}
+posicionaFatias();
 
 
 //----------------------------Roda-Roleta----------------------------//
 function girarRoleta() {
+  const {itens,total,angulo} = getComidaDados();
+
   const ajustaAnguloParaCentroDaFatia = 23;
   const rotacoes = 5;
   const indiceComidaSorteada = Math.floor(Math.random() * total);
