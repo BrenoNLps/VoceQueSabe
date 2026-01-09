@@ -8,9 +8,9 @@
 </head>
 <body>
     <div class="container_1" id="container_1">
+        <h1 class="titulo"> Voce que sabe!</h1>
         <div class="subcontainer_1">
             <ul class="roleta" id="roleta">
-
                 <li class="item"><span class="texto-item">Pastel</span></li>
                 <li class="item"><span class="texto-item">Hamburguer</span></li>
                 <li class="item"><span class="texto-item">Pizza</span></li>
@@ -19,18 +19,19 @@
                 <li class="item"><span class="texto-item">Macarrão</span></li>
                 <li class="item"><span class="texto-item">Esfiha</span></li>
                 <li class="item"><span class="texto-item">Salgado</span></li>
-            <!--
-            -->
             </ul>
+
             <div class="arrow-border">
                 <div class="arrow"></div>
             </div>
+
             <div class="center-dot"></div>
             <button class="botao-girar" onclick="girarRoleta()">Girar</button>
         </div>
+
         <p id="result"></p>
+
         <button id="tabelaAcionador" onclick="visibilidadeFormulario()">Adicionar <br> ou<br>Excluir</button>
-        <h1 class="titulo"> Voce que sabe!</h1>
     </div>
     
     <div class="container_2" id="container_2">
@@ -45,10 +46,11 @@
                 <tbody id="tableBody">
                 </tbody>
             </table>
-                <form class="formulario" onsubmit="adicionarComida(event)">
-                    <input type="text" id="txtComida" name="comida" placeholder="Digite aqui!"/>
-                    <button class="adicionar" type="submit">Adicionar</button>
-                </form>
+            
+            <form class="formulario" onsubmit="adicionarComida(event)">
+                <input type="text" id="txtComida" name="comida" placeholder="Digite aqui!"/>
+                <button class="adicionar" type="submit">Adicionar</button>
+            </form>
         </div>
     </div>
     <script src="script.js"></script>
