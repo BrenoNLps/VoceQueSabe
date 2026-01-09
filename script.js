@@ -166,3 +166,25 @@ function adicionarComida(event) {
     input.value = "";
   }
 }
+
+
+//-------------------------------------------------------------------//
+
+function visibilidadeFormulario(){
+  const container1  = document.getElementById("container_1")
+  const container2 = document.getElementById("container_2");
+
+  if(container1.style.width=="100%"){
+    container2.style.visibility = "visible";
+    container2.style.display = "flex";
+
+    container1.style.width="50%";
+  }else{
+    container2.style.visibility = "hidden";
+    container2.style.display = "none";
+
+    container1.style.width="100%";
+  }
+
+
+}
