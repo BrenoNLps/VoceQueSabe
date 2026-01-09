@@ -17,14 +17,15 @@ body{
 }
 
 .titulo{
+top: 0;
     position: absolute;
     padding: 10px;
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    text-shadow: rgb(255, 255, 255) 2px 2px 1px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 4px 4px 1px;
 }
 .container_1{
     position: relative;
