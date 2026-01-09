@@ -76,9 +76,22 @@ body{
     border: 5px solid white;
 }
 /*-----------------------Roleta----------------------------------*/
-.roleta{
-    width: 470px;
-    height: 470px;
+.roleta-wrapper {
+    width: 35vw;
+    height: 35vw;
+      max-width: 470px; /* limite máximo */
+    max-height: 470px;
+
+    border-radius: 50%;
+    box-shadow: 20px 40px 15px rgba(0, 0, 0, 0.466); /* sombra fixa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roleta {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: #c7c692;
     border: 5px solid hsl(0, 0%, 0%);
@@ -254,7 +267,7 @@ td{
         visibility: visible;
         display: flex;
     }
-    .roleta{
+    .roleta-wrapper{
         width: 400px;
         height: 400px;
     }
@@ -268,7 +281,7 @@ td{
 }
 
 @media(max-width:720px){
-    .roleta{
+    .roleta-wrapper{
         width: 300px;
         height: 300px;
     }
