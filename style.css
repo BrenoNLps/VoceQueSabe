@@ -20,6 +20,7 @@ main{
     width: 100%;
     height: 100%;
 }
+
 .titulo-container {
     position: absolute;
     top: 10px;
@@ -86,8 +87,8 @@ main{
     background-color:#ff0000;
     color:white;
     right: 20px;
-    padding: 30px 20px 30px 20px;
-    border-radius: 1000%;
+    padding: 30px 20px;
+    border-radius: 100%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: 5px solid white;
         box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.466);
@@ -104,7 +105,6 @@ main{
     font-size: 25px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow: rgb(197, 180, 180) 2px 2px 1px;
-    font-weight: bolder;
     border-radius: 40px;
     visibility: hidden;
 }
@@ -135,10 +135,6 @@ main{
     overflow: hidden;
 }
 
-/*
-    position: relative;
-    overflow: hidden;
-*/
 .item{
     position: absolute;
     display: flex;
@@ -222,8 +218,6 @@ main{
 }
 
 /*-------------------------Formulario--------------------------------*/
-
-
 table {
     border: 5px solid #0a0708;
     border-radius: 20px 20px 0px 0px;
@@ -277,8 +271,8 @@ td{
     background-color: #f8f8f8;
     height: 100%;
     width: 50%;
-    border-radius: 0px 0 0 15px;
-
+    border-bottom-left-radius: 15px;
+    border: none;
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 15PX;
@@ -290,20 +284,20 @@ td{
     cursor: pointer;
     color: white;
     background-color: #96c060;
-    border-radius: 0px 0px 10px 0px;
+    border-bottom-right-radius: 10px;
     font-size: 17px;
-    border-width: 0 0 0 2px;
 }.adicionar:hover{
         background-color: #77b126;
 }
 
 
+/*---------------------------Mobile----------------------------------*/
 @media(max-width:1080px){
     #tabelaAcionador{
     right: unset;
     bottom: 20px;
     font-size: 10px;
-    padding: 20px 15px 20px 15px;
+    padding: 20px 15px;
     }
 
     body{
@@ -325,11 +319,6 @@ td{
         width: 50vw;
         height: 50vw;
     }
-
-
-    .botao-girar{
-        bottom: -15%;
-    }
 }
 
 @media(max-width:600px){
@@ -340,11 +329,9 @@ td{
         width: 80vw;
         height: 80vw;
     }
-    .botao-girar{
-    padding: 20px 10px;
 
-    }
     .center-dot{
     padding: 10px;
     }
+    
 }
