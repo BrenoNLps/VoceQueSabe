@@ -171,20 +171,28 @@ function adicionarComida(event) {
 //-------------------------------------------------------------------//
 
 function visibilidadeFormulario(){
+  const body = document.body;
   const container1  = document.getElementById("container_1")
   const container2 = document.getElementById("container_2");
+  const flexDirection = window.getComputedStyle(body).flexDirection;
 
-  if(container1.style.width=="100%"){
+
+  if(flexDirection=="column"){
+      container2.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+  }else{
+      if(container1.style.width=="100%" ){
     container2.style.visibility = "visible";
     container2.style.display = "flex";
 
-    container1.style.width="50%";
-  }else{
-    container2.style.visibility = "hidden";
-    container2.style.display = "none";
+      container1.style.width="50%";
+    }else{
+      container2.style.visibility = "hidden";
+      container2.style.display = "none";
 
-    container1.style.width="100%";
+      container1.style.width="100%";
+    }
   }
-
-
 }
