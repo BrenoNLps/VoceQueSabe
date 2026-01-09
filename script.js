@@ -111,13 +111,15 @@ posicionaFatias();
 function girarRoleta() {
   const {itens,total,angulo} = getComidaDados();
 
-  const ajustaAnguloParaCentroDaFatia = 23;
+  const deslocamentoDeBorda = 23;
   const rotacoes = 5;
-  const indiceComidaSorteada = Math.floor(Math.random() * total);
-  const anguloFatia = indiceComidaSorteada* angulo; 
-  const rotacao = (360 * rotacoes) + (180 - anguloFatia) + ajustaAnguloParaCentroDaFatia;  
+  const indice = Math.floor(Math.random() * total);
+  const anguloFatia = indice * angulo; 
+  const ajusteAngular = total === 2 ? anguloFatia : ((180 -anguloFatia)+deslocamentoDeBorda);
+  const rotacao = (360 * rotacoes) + (ajusteAngular) ;  
 
 
+  
   const resultTexto =document.getElementById("result");
   resultTexto.style.visibility="hidden";
 
