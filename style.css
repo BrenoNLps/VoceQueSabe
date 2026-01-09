@@ -17,7 +17,7 @@ body{
 }
 
 .titulo{
-top: 0;
+    top: 0;
     position: absolute;
     padding: 10px;
     text-align: center;
@@ -64,7 +64,15 @@ top: 0;
     height: 70%;
 }
 
-
+#tabelaAcionador{
+    position: absolute;
+    background-color:#4f8b32;
+    color:white;
+    right: 20px;
+    padding: 30px 15px 30px 15px;
+    border-radius: 1000%;
+    border: 5px solid white;
+}
 /*-----------------------Roleta----------------------------------*/
 .roleta{
     width: 470px;
