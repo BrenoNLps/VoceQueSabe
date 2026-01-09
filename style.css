@@ -93,6 +93,7 @@ main{
 }#tabelaAcionador:hover{
     background-color: #920606;
     border-color: #0a0708;
+    cursor: pointer;
 }
 
 #result{
