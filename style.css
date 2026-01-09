@@ -281,7 +281,6 @@ td{
     }
 
     body{
-        flex-direction: column;
         height: auto;
     }
     main{
