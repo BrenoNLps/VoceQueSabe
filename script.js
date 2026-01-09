@@ -183,16 +183,17 @@ function visibilidadeFormulario(){
         block: "start"
       });
   }else{
-      if(container1.style.width=="100%" ){
-    container2.style.visibility = "visible";
-    container2.style.display = "flex";
-
-      container1.style.width="50%";
-    }else{
+    if(container1.style.width=="50%" ){
       container2.style.visibility = "hidden";
       container2.style.display = "none";
 
       container1.style.width="100%";
+
+    }else{
+      container2.style.visibility = "visible";
+      container2.style.display = "flex";
+
+      container1.style.width="50%";
     }
   }
 }
