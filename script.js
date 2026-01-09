@@ -127,10 +127,22 @@ function girarRoleta() {
   const anguloFatia = indiceComidaSorteada* angulo; 
   const rotacao = (360 * rotacoes) + (180 - anguloFatia) + ajustaAnguloParaCentroDaFatia;  
 
+
+  const resultTexto =document.getElementById("result");
+  resultTexto.style.visibility="hidden";
+
+   //força o navegador a volta para posição inicial antes de iniciar a nova animação
+  roleta.style.transition = "none";
+  roleta.style.transform = `rotate(0deg)`;
+  void roleta.offsetWidth; 
+
+
   roleta.style.transition = "transform 4s ease-out";
   roleta.style.transform = `rotate(${rotacao}deg)`;
   setTimeout(() => {
-    document.getElementById("result").textContent ="Você sabe: " + itens[indiceComidaSorteada].innerText;
+
+    resultTexto.style.visibility="visible"
+    resultTexto.textContent ="Você sabe: " + itens[indiceComidaSorteada].innerText;
   }, 4000);
 }
 
