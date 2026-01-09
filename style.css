@@ -91,18 +91,19 @@ main{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: 5px solid white;
 }#tabelaAcionador:hover{
-    background-color: #c51b1b;
+    background-color: #920606;
     border-color: #0a0708;
 }
 
 #result{
     position: absolute;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     font-size: 25px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: rgb(197, 180, 180) 2px 2px 1px;
     font-weight: bolder;
-    border-radius: 20px;
+    border-radius: 40px;
     visibility: hidden;
 }
 /*-----------------------Roleta----------------------------------*/
@@ -112,7 +113,7 @@ main{
 
 
     border-radius: 50%;
-    box-shadow: 20px 40px 15px rgba(0, 0, 0, 0.466); /* sombra fixa */
+    box-shadow: 20px 40px 15px rgba(0, 0, 0, 0.466);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,8 +203,7 @@ main{
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.466);
     bottom: -10%;
 }.botao-girar:hover{
-    background-color: #3a83be;
-    border-color: #65a4d8;
+    background-color: rgb(7, 94, 165);
 }
 
 /*-------------------------Formulario--------------------------------*/
