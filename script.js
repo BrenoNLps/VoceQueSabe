@@ -175,10 +175,10 @@ function adicionarComida(event) {
 //-------------------------------------------------------------------//
 
 function visibilidadeFormulario(){
-  const body = document.body;
+  const main = document.getElementById("page");
   const container1  = document.getElementById("container_1")
   const container2 = document.getElementById("container_2");
-  const flexDirection = window.getComputedStyle(body).flexDirection;
+  const flexDirection = window.getComputedStyle(main).flexDirection;
 
 
   if(flexDirection=="column"){
