@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VoceQueSabe</title>
+    <title>Roleta online para decidir o que comer | Você que sabe!</title>
+    <meta name="description" content="Não sabe o que comer? Use nossa roleta online para escolher sua refeição. Simples, rápida e divertida para acabar com a indecisão!">
     <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,7 +12,12 @@
 
     <main id="page">
     <div class="container_1" id="container_1">
-        <h1 class="titulo"> Você que sabe!</h1>
+        <div class="titulo-container">
+            <h1 class="titulo">
+                O que comer hoje? Gire a roleta do
+                <span class="marca">Você que sabe!</span>
+            </h1>
+        </div>
         <div class="subcontainer_1">
             <div class="roleta-wrapper">
                 <ul class="roleta" id="roleta">
@@ -29,7 +35,7 @@
             </div>
 
             <div class="center-dot"></div>
-            <button class="botao-girar" onclick="girarRoleta()">Girar</button>
+            <button class="botao-girar" onclick="girarRoleta()" aria-label="Girar roleta para escolher o que comer">Girar</button>
         </div>
 
         <p id="result"></p>
