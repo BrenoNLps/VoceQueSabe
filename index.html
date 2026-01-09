@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container_1">
+    <div class="container_1" id="container_1">
         <div class="subcontainer_1">
             <ul class="roleta" id="roleta">
 
@@ -29,9 +29,11 @@
             <button class="botao-girar" onclick="girarRoleta()">Girar</button>
         </div>
         <p id="result"></p>
+        <button id="tabelaAcionador" onclick="visibilidadeFormulario()">Adicionar <br> ou<br>Excluir</button>
+        <h1 class="titulo"> Voce que sabe!</h1>
     </div>
     
-    <div class="container_2">
+    <div class="container_2" id="container_2">
         <div class="subcontainer_2">
             <table>
                 <thead>
@@ -49,7 +51,6 @@
                 </form>
         </div>
     </div>
-    <h1 class="titulo"> Voce que sabe!</h1>
     <script src="script.js"></script>
 </body>   
 </html>
