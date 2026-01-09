@@ -39,7 +39,6 @@ body{
 .subcontainer_1{
     width: 80vw;
     display: flex;
-    background-color: #77b126;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -68,13 +67,16 @@ body{
 
 #tabelaAcionador{
     position: absolute;
-    background-color:#4f8b32;
+    background-color:#ff0000;
     color:white;
     right: 20px;
-    padding: 30px 15px 30px 15px;
+    padding: 30px 20px 30px 20px;
     border-radius: 1000%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: 5px solid white;
+}#tabelaAcionador:hover{
+    background-color: #c51b1b;
+    border-color: #0a0708;
 }
 
 #result{
@@ -109,7 +111,7 @@ body{
     height: 100%;
     border-radius: 50%;
     background-color: #c7c692;
-    border: 5px solid hsl(0, 0%, 0%);
+    border: 5px solid hsl(0, 0%, 100%);
     position: relative;
     overflow: hidden;
 }
@@ -128,18 +130,17 @@ body{
     width: 55%;
     height: 60%;
     transform-origin: 1% 0%;
-    border: #000000 1px solid;
+    border: #ffffff 1px solid;
     overflow: hidden;
 
 }
 
 .texto-item{
     color: rgb(255, 250, 250);
-    text-shadow: rgb(0, 0, 0) 2px 1px 6px;
+    text-shadow: rgb(0, 0, 0) 2px 2px 3px;
     position: relative;
     width: 100%;
-    background-color: #076dc0;
-    font-size: clamp(14px, 2vw, 24px);
+    font-size: clamp(14px, 2vw, 27px);
     
 }
 
@@ -150,7 +151,7 @@ body{
     position: absolute;
     top: -8px;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
-    background: rgb(0, 0, 0); 
+    background: rgb(255, 255, 255); 
 }
 
 .arrow{
@@ -170,7 +171,7 @@ body{
     padding: 20px 20px;
     background-color: #65a4d8;
     border-radius: 100%;
-    border: 5px solid #000000   ;
+    border: 5px solid #ffffff   ;
     box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.466);
 }
 .botao-girar{
@@ -179,7 +180,7 @@ body{
     font-size: 16px;
     background-color: #65a4d8;
     color: white;
-    border: 5px solid rgb(0, 0, 0);
+    border: 5px solid rgb(255, 255, 255);
     border-radius: 100%;
     cursor:pointer;
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.466);
