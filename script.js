@@ -61,52 +61,48 @@ function posicionaFatias(){
   const {itens,total,angulo} = getComidaDados();
 
   itens.forEach((item, i) => {
-  const texto = item.querySelector(".texto-item");
-  
+    const texto = item.querySelector(".texto-item");
+    
 
-  //reseta estilo para nao manter estilo do tamanho anterior
-  item.style = "";
-  texto.style = "";
-
-
-  item.style.backgroundColor = `hsl(${i * angulo}, 60%, 70%)`;
-  item.style.transform = `rotate(${i * angulo}deg) skewY(${90 - angulo}deg)`;
-  if (total === 2) {
-    item.style.top = '0';
-    item.style.left = '0';
-    item.style.width = '100%';
-    item.style.height = '50%';
-    texto.style.textAlign = 'center';
-    item.style.transformOrigin = '50% 100%';
-    item.style.transform = `rotate(${i * angulo}deg)`;
+    //reseta estilo para nao manter estilo do tamanho anterior
+    item.style = "";
+    texto.style = "";
 
 
-  }else if (total === 3) {
-    //    texto.style.marginTop = '-20px';
-    texto.style.transform = `rotate(49deg)  translateY(10%) skewX(7deg)`;
-  }else if (total === 4) {
-    texto.style.transform = `rotate(45deg)  translateY(-20%)`;
+    item.style.backgroundColor = `hsl(${i * angulo}, 60%, 70%)`;
+    item.style.transform = `rotate(${i * angulo}deg) skewY(${90 - angulo}deg)`;
+    if (total === 2) {
+      item.style.top = '0';
+      item.style.left = '0';
+      item.style.width = '100%';
+      item.style.height = '50%';
+      texto.style.textAlign = 'center';
+      item.style.transformOrigin = '50% 100%';
+      item.style.transform = `rotate(${i * angulo}deg)`;
 
-  }else if (total === 5) {
 
-    texto.style.transform = `rotate(45deg)  translateY(-20%)`;
+    }else if (total === 3) {
+      texto.style.transform = `rotate(49deg)  translateY(10%) skewX(7deg)`;
+    }else if (total === 4) {
+      texto.style.transform = `rotate(45deg)  translateY(-20%)`;
 
-  }else if (total === 6) {
+    }else if (total === 5) {
 
-    texto.style.transform = `rotate(45deg)  translateY(-20%) skewX(4deg)`;
+      texto.style.transform = `rotate(45deg)  translateY(-40%)`;
 
-  }else if (total === 7) {
-    //texto.style.marginTop = '-20px';
-    //texto.style.marginLeft = '-60px';
-    texto.style.transform = `rotate(45deg)  translateY(-20%) skewX(28deg)`;
+    }else if (total === 6) {
 
-  }else if (total === 8) {
-    texto.style.marginTop = '-30px';
-    texto.style.marginLeft = '-28px';
-    texto.style.transform = `rotate(58deg)  translateY(90%) skewX(20deg)`;
-    //texto.style.transform = `rotate(65deg)  translateY(420%) skewX(22deg)`;
-  }
-})
+      texto.style.transform = `rotate(45deg)  translateY(-20%) skewX(4deg)`;
+
+    }else if (total === 7) {
+      texto.style.transform = `rotate(49deg)  translateY(30%) skewX(9deg)`;
+
+    }else if (total === 8) {
+      texto.style.marginTop = '0px';
+      texto.style.marginLeft = '-50px';
+      texto.style.transform = `rotate(50deg)  translateY(-30%) skewX(17deg)`;
+    }
+  })
 }
 posicionaFatias();
 
@@ -115,7 +111,7 @@ posicionaFatias();
 function girarRoleta() {
   const {itens,total,angulo} = getComidaDados();
 
-  const ajustaAnguloParaCentroDaFatia = 23;
+  const ajustaAnguloParaCentroDaFatia = 26;
   const rotacoes = 5;
   const indiceComidaSorteada = Math.floor(Math.random() * total);
   const anguloFatia = indiceComidaSorteada* angulo; 
