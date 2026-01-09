@@ -132,7 +132,7 @@ function girarRoleta() {
   setTimeout(() => {
 
     resultTexto.style.visibility="visible"
-    resultTexto.textContent ="Você sabe: " + itens[indiceComidaSorteada].innerText;
+    resultTexto.textContent ="Eu sei, " + itens[indice].innerText + "!";
   }, 4000);
 }
 
