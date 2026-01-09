@@ -82,35 +82,29 @@ function posicionaFatias(){
 
 
   }else if (total === 3) {
-    texto.style.paddingLeft = '18px';
-    texto.style.transform = `rotate(48deg)  translateY(87%) skewX(7deg)`;
-
-    texto.style.fontSize = '28px';
+    //    texto.style.marginTop = '-20px';
+    texto.style.transform = `rotate(49deg)  translateY(10%) skewX(7deg)`;
   }else if (total === 4) {
-    item.style.height = '50%';
-    texto.style.transform = `skewY(${-(90 - angulo)}deg) rotate(${-i * angulo}deg) translateY(-10px)`;
-    texto.style.paddingLeft = '16px';
-    texto.style.transform = `rotate(40deg)  translateY(100%)`;
+    texto.style.transform = `rotate(45deg)  translateY(-20%)`;
 
   }else if (total === 5) {
-    item.style.height = '52.5%';
-    texto.style.paddingLeft = '16px';
-    texto.style.transform = `rotate(40deg)  translateY(100%)`;
+
+    texto.style.transform = `rotate(45deg)  translateY(-20%)`;
 
   }else if (total === 6) {
-    texto.style.paddingLeft = '5px';
-    texto.style.transform = `rotate(45deg)  translateY(100%) skewX(4deg)`;
+
+    texto.style.transform = `rotate(45deg)  translateY(-20%) skewX(4deg)`;
 
   }else if (total === 7) {
-    texto.style.marginTop = '-20px';
-    texto.style.marginLeft = '-60px';
-    texto.style.fontSize = '20px';
-    texto.style.transform = `rotate(70deg)  translateY(100%) skewX(28deg)`;
+    //texto.style.marginTop = '-20px';
+    //texto.style.marginLeft = '-60px';
+    texto.style.transform = `rotate(45deg)  translateY(-20%) skewX(28deg)`;
 
   }else if (total === 8) {
-      texto.style.marginTop = '-40px';
-    texto.style.marginLeft = '-90px';
-    texto.style.transform = `rotate(57deg)  translateY(-10%) skewX(22deg)`;
+    texto.style.marginTop = '-30px';
+    texto.style.marginLeft = '-28px';
+    texto.style.transform = `rotate(58deg)  translateY(90%) skewX(20deg)`;
+    //texto.style.transform = `rotate(65deg)  translateY(420%) skewX(22deg)`;
   }
 })
 }
