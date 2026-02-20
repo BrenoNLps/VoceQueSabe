@@ -1,6 +1,7 @@
 # Você Que Sabe!
+Acesse o site 🔗 https://vocequesabe.netlify.app
 
-![Capa do projeto](./githubCover/capa.png)
+![Capa do projeto](./githubCover/preview.png)
 
 Projeto interativo inspirado na clássica frase **“Você que sabe!”**, criado para ajudar indecisos (especialmente casais 😄) a escolherem **o que comer** de forma simples, rápida e bem-humorada.
 
@@ -9,8 +10,6 @@ O site apresenta uma **roleta online de comidas**, onde o usuário pode girar e 
 ---
 
 ## 🚀 Como usar
-
-1. Acesse o site 🔗 https://vocequesabe.netlify.app
 2. Clique em **Girar**
 3. Deixe a roleta decidir sua próxima refeição 🍕🍔🍣
 4. (Opcional) Adicione ou remova opções conforme sua preferência
