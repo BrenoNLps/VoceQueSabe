@@ -5,22 +5,19 @@
     margin: 0;
     font-weight:bolder;
     box-sizing: border-box;
-
 }
-
 body{
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
 }
-
 main{
     display: flex;
     width: 100%;
     height: 100%;
 }
-
+/*--------------------Conteudo-Principal-------------------------*/
 .titulo-container {
     position: absolute;
     top: 10px;
@@ -30,20 +27,17 @@ main{
     text-align: center;
     pointer-events: none;
 }
-
 .titulo {
     margin: 0;
     font-size: clamp(10px, 2vw, 15px);
     color: #fff;
     text-shadow: rgb(0, 0, 0) 2.5px 2.5px 1px;
 }
-
 .marca {
     display: block;
     font-size: 40px;
     margin-top: 4px;
 }
-
 .container_1{
     position: relative;
     display: flex;
@@ -52,7 +46,6 @@ main{
     background-color: #75787c;
     width: 100%;
 }
-
 .subcontainer_1{
     width: 80vw;
     display: flex;
@@ -60,19 +53,16 @@ main{
     justify-content: center;
     position: relative;
 }
-
 .container_2{
     border-left: 5px solid hsl(0, 0%, 0%);
     width: 50%;
     background-color: #e8f0ed;
-
     align-items: center;
     justify-content: center;
     flex-direction: column;
     visibility:hidden;
     display: none;
 }
-
 .subcontainer_2{
     display: flex;
     align-items: center;
@@ -81,7 +71,7 @@ main{
     width: 60%;
     height: 70%;
 }
-
+/*----------------------Spin-button------------------------------*/
 #tabelaAcionador{
     position: absolute;
     background-color:#ff0000;
@@ -92,13 +82,13 @@ main{
     border-radius: 100%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: 5px solid white;
-        box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.466);
-}#tabelaAcionador:hover{
+    box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.466);
+}
+#tabelaAcionador:hover{
     background-color: #920606;
     border-color: #0a0708;
     cursor: pointer;
 }
-
 #result{
     position: absolute;
     background-color: rgb(255, 255, 255);
@@ -113,19 +103,12 @@ main{
 .roleta-wrapper {
     width: 35vw;
     height: 35vw;
-
-
     border-radius: 50%;
     box-shadow: 20px 40px 15px rgba(0, 0, 0, 0.466);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/*   
-    max-width: 470px; 
-    max-height: 470px;
-*/
-
 .roleta {
     width: 100%;
     height: 100%;
@@ -135,7 +118,6 @@ main{
     position: relative;
     overflow: hidden;
 }
-
 .item{
     position: absolute;
     display: flex;
@@ -148,59 +130,51 @@ main{
     transform-origin: 1% 0%;
     border: #ffffff 1px solid;
     overflow: hidden;
-
 }
-
 .texto-item{
     color: rgb(255, 250, 250);
     text-shadow: rgb(0, 0, 0) 2px 2px 3px;
     position: relative;
     width: 100%;
     font-size: clamp(14px, 2vw, 27px);
-    
 }
-
-
 .arrow-border {
-    width: 60px;   
+    width: 60px;
     height: 60px;
     position: absolute;
     top: -8px;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
-    background: rgb(255, 255, 255); 
+    background: rgb(255, 255, 255);
     box-shadow: 20px 40px 1px rgba(163, 12, 12, 0.466);
 }
-
 .arrow{
-    width: 43px;   
+    width: 43px;
     height: 43px;
     position: absolute;
     top: 5px;
-    left: 8.5px;  
+    left: 8.5px;
     background: #65a4d8;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 .arrow-shadow{
     filter: blur(10px);
     opacity: 0.5;
-    width: 50px;   
+    width: 50px;
     height: 50px;
     position: absolute;
     top: 3px;
     margin-left: 8px;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
-    background: rgb(0, 0, 0); 
+    background: rgb(0, 0, 0);
     box-shadow: 20px 40px 1px rgba(163, 12, 12, 0.466);
 }
-/*  #4CAF50;   */
-
 .center-dot{
     position: absolute;
     padding: 20px 20px;
     background-color: #65a4d8;
     border-radius: 100%;
-    border: 5px solid #ffffff   ;
+    border: 5px solid #ffffff;
     box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.466);
 }
 .botao-girar{
@@ -215,37 +189,35 @@ main{
     cursor:pointer;
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.466);
     bottom: -10%;
-}.botao-girar:hover{
+}
+.botao-girar:hover{
     background-color: rgb(7, 94, 165);
 }
-
 /*-------------------------Formulario--------------------------------*/
 table {
     border: 5px solid #0a0708;
     border-radius: 20px 20px 0px 0px;
-    border-spacing: 0; 
-    overflow: hidden; 
-
+    border-spacing: 0;
+    overflow: hidden;
     font-size: 17px;
     width: 100%;
     height: 100%;
     color: rgb(255, 255, 255);
     box-shadow: 20px 67px 20px rgba(0, 0, 0, 0.466);
 }
-
-thead{background-color: #0a0708; }
-
-tbody{background-color: #a9b0b1; }
+thead{
+    background-color: #0a0708;
+}
+tbody{
+    background-color: #a9b0b1;
+}
 td{
     padding:1%;
     width: 50%;
     text-align: center;
-    border:1.55px solid #0a0708   ;
-
+    border:1.55px solid #0a0708;
 }
-
 .formulario{
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -254,7 +226,6 @@ td{
     border-radius: 0px 0px 20px 20px;
     width: 100%;
     height: 10%;
-    
 }
 .btnExcluir{
     width: 100%;
@@ -265,10 +236,10 @@ td{
     cursor: pointer;
     font-size: 17px;
     background-color: #ce5b5b;
-}.btnExcluir:hover{
+}
+.btnExcluir:hover{
     background-color: #c51b1b;
 }
-
 #txtComida{
     background-color: #f8f8f8;
     height: 100%;
@@ -277,7 +248,7 @@ td{
     border: none;
     text-align: center;
     color: rgb(0, 0, 0);
-    font-size: 15PX;
+    font-size: 15px;
     border-width: 0 0 2px 0;
 }
 .adicionar{
@@ -288,11 +259,10 @@ td{
     background-color: #96c060;
     border-bottom-right-radius: 10px;
     font-size: 17px;
-}.adicionar:hover{
-        background-color: #77b126;
 }
-
-
+.adicionar:hover{
+    background-color: #77b126;
+}
 /*---------------------------Mobile----------------------------------*/
 @media(max-width:1080px){
     .botao-girar{
@@ -300,19 +270,17 @@ td{
         height: 80px;
     }
     #tabelaAcionador{
-    right: unset;
-    bottom: 20px;
-    font-size: 10px;
-    width: 80px;
-    height: 80px;
+        right: unset;
+        bottom: 20px;
+        font-size: 10px;
+        width: 80px;
+        height: 80px;
     }
-
     body{
         height: auto;
     }
     main{
         flex-direction: column;
-
     }
     .container_2,.container_1{
         border: none;
@@ -321,13 +289,11 @@ td{
         visibility: visible;
         display: flex;
     }
-
     .roleta-wrapper{
         width: 50vw;
         height: 50vw;
     }
 }
-
 @media(max-width:600px){
     .subcontainer_2{
         width: 85%;
@@ -336,9 +302,7 @@ td{
         width: 80vw;
         height: 80vw;
     }
-
     .center-dot{
-    padding: 10px;
+        padding: 10px;
     }
-    
 }
